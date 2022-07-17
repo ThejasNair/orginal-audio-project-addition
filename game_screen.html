@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guess The Word</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="game.css">
+
+<script src="game_login.js"></script>
+</head>
+<body style="background-color:royalblue;">
+
+<div class="container">
+	<h3 id ="Player1_name"></h3><span id="Player1_score">: 0</span>
+		<h3 id ="Player2_name"></h3><span id="Player2_score">: 0</span>
+	<center>
+		<h2  id="BIG_ONE" style="color: white;">Guess The Word!</h2>
+		<h2>Question Person:</h2><span id="Question_Person"> </span>
+		<h2>Answer Person:</h2><span id="Answer_Person"> </span>
+		<div style="border-style: ridge; background-color: rebeccapurple; text-align: left;" id="output" class="col-lg-6"></div>
+		<br>
+		<br>
+
+		<label>Send You Word: <b style="color: red">Try putting word which has 5 or more alphabet</b></label>
+		<br>
+		<input type="text" id="mr_input">
+		<br>
+		<button type="button" id="all_buttoned_up" onclick="send();">Send</button>
+		<br>
+		<br>
+		<button id="buttonius" class="btn-warning" onclick="youWin();">You Win Tester</button>
+		<p>The button above shows what i have done extra for the project. I have installed this button since there was no point system, so this will let player1 auto win. Hint: After pressing this button, wait 5 seconds for a surprise ;)</p>
+	</center>
+</div>
+
+</body>
+</html>
